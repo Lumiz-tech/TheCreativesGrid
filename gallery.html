@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreativeGrid Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">CreativeGrid</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <h2>Community Gallery</h2>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="uiux">UI/UX</button>
+      <button data-filter="logos">Logos</button>
+      <button data-filter="illustrations">Illustrations</button>
+      <button data-filter="3d">3D</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+      <div class="gallery-item uiux">
+        <img src="images/project1.jpg" alt="UI/UX Design">
+        <div class="info"><h3>UI Redesign</h3><p>by John Doe</p></div>
+      </div>
+      <div class="gallery-item logos">
+        <img src="images/project2.jpg" alt="Logo Design">
+        <div class="info"><h3>Minimal Logo</h3><p>by Jane Doe</p></div>
+      </div>
+      <div class="gallery-item illustrations">
+        <img src="images/project3.jpg" alt="Illustration">
+        <div class="info"><h3>Concept Art</h3><p>by Alex</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CreativeGrid. All rights reserved.</p>
+  </footer>
+</body>
+</html>
