@@ -208,3 +208,19 @@ if (lightboxLinks.length > 0) {
     });
   });
 }
+
+
+
+let lastScrollY = window.scrollY;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > lastScrollY) {
+    // scrolling down
+    header.classList.add("hide");
+  } else {
+    // scrolling up
+    header.classList.remove("hide");
+  }
+  lastScrollY = window.scrollY;
+});
