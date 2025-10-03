@@ -181,3 +181,65 @@ footer { text-align:center; padding:2rem; background:#081026; color:#888; }
 .lightbox:target {
   display: flex;
 }
+/* Designer cards in gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+.designer-card {
+  text-align: center;
+  display: block;
+  color: #fff;
+  background: #162a44;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.designer-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.designer-card:hover {
+  transform: scale(1.05);
+}
+.designer-name {
+  padding: 0.75rem 0;
+  background: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+}
+
+/* Designer page styling */
+.designer-page {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+}
+.designer-profile {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.designer-profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00d4ff;
+}
+.designer-page h1 {
+  margin-top: 1rem;
+  color: #00d4ff;
+}
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.work-item img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
