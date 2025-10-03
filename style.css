@@ -317,3 +317,18 @@ footer { text-align:center; padding:2rem; background:#081026; color:#888; }
     font-size: 0.9rem;
   }
 }
+
+/* Navbar scroll effect */
+header {
+  background: rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hidden state */
+header.hide {
+  transform: translateY(-100%);
+}
+
